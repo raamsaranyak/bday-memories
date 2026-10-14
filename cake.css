@@ -1,0 +1,177 @@
+/* Compiled from cake.less (cake-size: 300px) */
+
+.cake {
+  position: absolute;
+  display: none;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+  height: 300px;
+  z-index: 10;
+}
+
+.cake:after {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 300px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 6px;
+}
+
+.candles {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -7.5px;
+  margin-top: -25px;
+  width: 15px;
+  height: 50px;
+}
+
+.candles:after,
+.candles:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6.6667px;
+}
+
+.candles:after {
+  top: 25%;
+  left: 0;
+}
+
+.candles:before {
+  top: 45%;
+  left: 0;
+}
+
+.flame {
+  display: none;
+  border-radius: 100%;
+  box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 37.5px;
+}
+
+.flame:nth-child(1) {
+  animation: flame-flicker 2s infinite;
+}
+
+.flame:nth-child(2) {
+  animation: flame-flicker 1.5s infinite;
+}
+
+.flame:nth-child(3) {
+  animation: flame-flicker 1s infinite;
+}
+
+.flame:nth-child(4) {
+  animation: flame-flicker 0.5s infinite;
+}
+
+.flame:nth-child(5) {
+  animation: flame-flicker 0.2s infinite;
+}
+
+@keyframes flame-flicker {
+  0% {
+    background: rgba(254, 248, 97, 0.5);
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    transform: translateY(-60px) scale(0);
+  }
+
+  100% {
+    background: rgba(254, 248, 97, 0.5);
+    transform: translateY(0) scale(1);
+  }
+}
+
+.frosting {
+  background: rgba(236, 231, 227, 1);
+  border-radius: 150px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-left: -83.3333px;
+  margin-top: -15px;
+  width: 166.6667px;
+  height: 37.5px;
+  z-index: 10;
+}
+
+.frosting:after,
+.frosting:before {
+  background: rgba(236, 231, 227, 1);
+  border-radius: 300px;
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 30px;
+}
+
+.frosting:after {
+  top: 20px;
+  right: 42.8571px;
+}
+
+.frosting:before {
+  top: 30px;
+  right: 27.2727px;
+}
+
+.cake-body {
+  background: rgba(109, 56, 38, 1);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -75px;
+  width: 150px;
+  height: 100px;
+}
+
+.cake-body:after,
+.cake-body:before {
+  background: rgba(236, 231, 227, 0.6);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 15px;
+}
+
+.cake-body:after {
+  top: 30%;
+  left: 0;
+}
+
+.cake-body:before {
+  top: 60%;
+  left: 0;
+}
+
+h1,
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

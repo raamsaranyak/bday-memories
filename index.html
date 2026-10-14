@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"><!-- <![endif]-->
+
+<head>
+	<title>Happy Birthday Hema</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Happy Birthday Hema">
+	<meta name="robots" content="index, follow" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="bg-animation.css">
+	<link rel="stylesheet" type="text/css" href="loading.css">
+	<link rel="stylesheet" type="text/css" href="cake.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href='https://fonts.googleapis.com/css?family=Signika:400,600,700&display=swap' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@700&display=swap' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class="stars"></div>
+	<div class="twinkling"></div>
+	<div class="clouds"></div>
+	<div class="glam"></div>
+	<div class="particles" id="particles"></div>
+	<div class="stickers" id="stickers"></div>
+	<div class="loading"></div>
+	<audio class="birthday-song" preload="none" loop>
+		<source src="hbd.mp3">
+		</source>
+		Your browser isn't invited for super fun audio time.
+	</audio>
+	<div class="balloon text-center" id="balloon-1" data-letter="H">
+		<h2 style="color:#F2B300;">H</h2>
+	</div>
+	<div class="balloon text-center" id="balloon-2" data-letter="B">
+		<h2 style="color:#0719D4;">B</h2>
+	</div>
+	<div class="balloon text-center" id="balloon-3" data-letter="D">
+		<h2 style="color:#D14D39;">D</h2>
+	</div>
+	<div class="balloon text-center" id="balloon-4" data-letter="H">
+		<h2 style="color:#8FAD00;">H</h2>
+	</div>
+	<div class="balloon text-center" id="balloon-5" data-letter="E">
+		<h2 style="color:#8377E4;">E</h2>
+	</div>
+	<div class="balloon text-center" id="balloon-6" data-letter="M">
+		<h2 style="color:#99C96A;">M</h2>
+	</div>
+	<div class="balloon text-center" id="balloon-7" data-letter="A">
+		<h2 style="color:#20CFB4;">A</h2>
+	</div>
+
+	<img src="Balloon-Border.png" width="100%" class="balloon-border">
+
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb-yellow"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb-red"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb-blue"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb-green"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb-pink"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb-orange"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<img src="banner.png" class="banner">
+			</div>
+		</div>
+		<div class="row cake-wrapper">
+			<div class="col-md-12 text-center">
+				<div class="cake">
+					<div class="candles">
+						<div class="flame"></div>
+						<div class="flame"></div>
+						<div class="flame"></div>
+						<div class="flame"></div>
+						<div class="flame"></div>
+					</div>
+					<div class="frosting"></div>
+					<div class="cake-body"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row message">
+			<div class="col-md-12 text-center">
+				<p>Today is...</p>
+				<p>as beautiful as other days</p>
+				<p>but you realize</p>
+				<p>another year has gone</p>
+				<p>in a blink of the eyes</p>
+				<p><strong>however</strong></p>
+				<p>Do you know..?</p>
+				<p>today is just special</p>
+				<p>so special to you</p>
+				<p>that's why</p>
+				<p>Let's make it...</p>
+				<p>the best celebration ever</p>
+				<p>and let me share...</p>
+				<p>a piece of happiness to you</p>
+				<p>I made all this...</p>
+				<p>as a birthday present to you</p>
+				<p>thanks for the friendship we made</p>
+				<p>thanks for everything</p>
+
+			</div>
+		</div>
+		<div class="navbar navbar-fixed-bottom">
+			<div class="row">
+				<div class="col-md-6 text-center col-md-offset-3">
+					<button class="btn btn-primary" id="btn-turn-on-lights">Turn On Lights</button>
+					<button class="btn btn-primary" id="btn-play-music">Play Music</button>
+					<button class="btn btn-primary" id="btn-decorate">Let's Decorate</button>
+					<button class="btn btn-primary" id="btn-fly-balloons">Fly With Balloons</button>
+					<button class="btn btn-primary" id="btn-show-cake">Most Delicious Cake Ever</button>
+					<button class="btn btn-primary" id="btn-light-candle"> Light Candle</button>
+					<button class="btn btn-primary" id="btn-happy-birthday">Happy Birthday</button>
+					<button class="btn btn-primary" id="btn-message">A message for you</button>
+					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
+				</div>
+			</div>
+			<!-- <div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div> -->
+		</div>
+
+
+	</div>
+	<!-- Cross-page navigation (added): Birthday-master -> pics -->
+	<nav class="site-jump" aria-label="Page navigation">
+		<a href="../dora/index.html" aria-label="Back: Happy Birthday Hema!">&lsaquo; Back</a>
+		<a href="../pics/index.html" aria-label="Next: Hema &amp; Me scrapbook">Next &rsaquo;</a>
+	</nav>
+	<style>
+		.site-jump{position:fixed;left:0;right:0;bottom:14px;z-index:99998;display:flex;justify-content:space-between;align-items:center;padding:0 16px;pointer-events:none;}
+		.site-jump a{pointer-events:auto;display:inline-flex;align-items:center;gap:6px;padding:12px 22px;border-radius:999px;text-decoration:none;font:700 14px/1 'Signika','Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.05em;color:#fff;background:linear-gradient(145deg,#ff5fa2,#8b5cf6);border:2px solid rgba(255,255,255,.85);box-shadow:0 10px 26px rgba(60,20,90,.55);transition:transform .18s ease,box-shadow .18s ease,filter .18s ease;-webkit-tap-highlight-color:transparent;cursor:pointer;}
+		.site-jump a:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(60,20,90,.5);filter:brightness(1.05);}
+		.site-jump a:active{transform:translateY(0) scale(.97);}
+		@media (max-width:480px){.site-jump a{padding:9px 14px;font-size:12px;}}
+	</style>
+
+</body>
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="extra-animations.js"></script>
+<script src="effect.js"></script>
+
+</html>
